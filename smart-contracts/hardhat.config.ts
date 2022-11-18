@@ -20,7 +20,7 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
   }
 });
 
-const INFURA_KEY = process.env.INFURA_ID;
+const GOERLI_ALCHEMY_KEY = process.env.GOERLI_ALCHEMY_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 const config: HardhatUserConfig = {
@@ -28,13 +28,13 @@ const config: HardhatUserConfig = {
   defaultNetwork: 'hardhat',
 
   networks: {
-    // rinkeby: {
-    //   url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
-    //   accounts: [`${PRIVATE_KEY}`],
-    // },
     localhost: {
       url: 'http://127.0.0.1:8545',
       saveDeployments: true,
+    },
+    goerli: {
+      url: `https://eth-goerli.g.alchemy.com/v2/${GOERLI_ALCHEMY_KEY}`,
+      accounts: [`${PRIVATE_KEY}`],
     },
   },
   namedAccounts: {

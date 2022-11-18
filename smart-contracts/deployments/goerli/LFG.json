@@ -1,0 +1,95 @@
+{
+  "address": "0x565dff094848d57728c40d343F107d61336dc5ec",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "count",
+          "type": "uint256"
+        }
+      ],
+      "name": "Wagmi",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "gm",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "gmCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x4fc573ac78dc273f9863aa4982b09484edb33608ebc9da26081d3e9e134d17a7",
+  "receipt": {
+    "to": null,
+    "from": "0xD71256eC24925873cE9E9F085f89864Ca05970bD",
+    "contractAddress": "0x565dff094848d57728c40d343F107d61336dc5ec",
+    "transactionIndex": 37,
+    "gasUsed": "167607",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9de1933bdfe448a6e742199b30e9db441b39b9c5a376ba6fd90bf147b2e15d4d",
+    "transactionHash": "0x4fc573ac78dc273f9863aa4982b09484edb33608ebc9da26081d3e9e134d17a7",
+    "logs": [],
+    "blockNumber": 7975335,
+    "cumulativeGasUsed": "12047411",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "0b254af6fdf889d15d24309920258d00",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"count\",\"type\":\"uint256\"}],\"name\":\"Wagmi\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"gm\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"gmCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/LFG.sol\":\"LFG\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/LFG.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.4;\\n\\ncontract LFG {\\n    event Wagmi(address sender, uint256 count);\\n\\n    uint256 public gmCount = 0;\\n\\n    function gm() public {\\n        gmCount++;\\n        emit Wagmi(msg.sender, gmCount);\\n    }\\n}\\n\",\"keccak256\":\"0x1a008d78e026765b9b588659f1cf2d0bb7c1740bcd8de3ed188d7ec68afe80d3\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b50610209806100246000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c80636cb5f7101461003b578063c0129d4314610059575b600080fd5b610043610063565b6040516100509190610104565b60405180910390f35b610061610069565b005b60005481565b60008081548092919061007b9061015b565b91905055507f4c9898649aaf2d737b14235c1f4a1d5c30482a16045ce34074ba3ffc6823b480336000546040516100b39291906100db565b60405180910390a1565b6100c68161011f565b82525050565b6100d581610151565b82525050565b60006040820190506100f060008301856100bd565b6100fd60208301846100cc565b9392505050565b600060208201905061011960008301846100cc565b92915050565b600061012a82610131565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600061016682610151565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610199576101986101a4565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea264697066735822122051a690617a2479a192c89891605fcf3d4b1618c2c91178c8b8d971a64a03850264736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c80636cb5f7101461003b578063c0129d4314610059575b600080fd5b610043610063565b6040516100509190610104565b60405180910390f35b610061610069565b005b60005481565b60008081548092919061007b9061015b565b91905055507f4c9898649aaf2d737b14235c1f4a1d5c30482a16045ce34074ba3ffc6823b480336000546040516100b39291906100db565b60405180910390a1565b6100c68161011f565b82525050565b6100d581610151565b82525050565b60006040820190506100f060008301856100bd565b6100fd60208301846100cc565b9392505050565b600060208201905061011960008301846100cc565b92915050565b600061012a82610131565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600061016682610151565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415610199576101986101a4565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fdfea264697066735822122051a690617a2479a192c89891605fcf3d4b1618c2c91178c8b8d971a64a03850264736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 10,
+        "contract": "contracts/LFG.sol:LFG",
+        "label": "gmCount",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
